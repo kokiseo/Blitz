@@ -2095,6 +2095,9 @@ body.fixed {
 }
 .designer__heading {
   padding-top: 50px;
+  padding-top: 3.125rem;
+  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
 }
 .designer__title {
   width: 138px;
