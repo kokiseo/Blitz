@@ -2054,7 +2054,7 @@ body.fixed {
 
 @media screen and (min-width: 768px) {
   .concept {
-    margin: 9.375rem 0;
+    margin: 6.25rem 0 9.375rem;
   }
   .concept__inner {
     margin: 0 auto;
