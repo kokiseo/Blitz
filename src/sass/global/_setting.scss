@@ -30,6 +30,9 @@ $regular: 300;
 $normal: 400;
 $bold: 700;
 
+$letter-spacing: 0.08em;
+$line-height: 1.7;
+
 ////////////////////
 // 色の指定
 ////////////////////
@@ -45,7 +48,8 @@ $color-accent: #98784D;
 body {
   font-family: $base-font-family;
   color: $color-body;
-  line-height: 1.8;
+  line-height: 1.7;
+  letter-spacing: $letter-spacing;
 }
 
 ////////////////////

@@ -2,7 +2,8 @@
 body {
   font-family: "Noto Sans JP";
   color: #444444;
-  line-height: 1.8;
+  line-height: 1.7;
+  letter-spacing: 0.08em;
 }
 
 .u-desktop {
@@ -103,7 +104,6 @@ html {
 body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
-  line-height: 1.5;
 }
 
 /* Remove list styles on ul, ol elements with a class attribute */
