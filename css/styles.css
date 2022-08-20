@@ -1825,8 +1825,8 @@ body.fixed {
     height: 21.875rem;
     top: 50%;
     left: -6.25rem;
-    -webkit-transform: translateY(-50%) rotate(-15deg);
-            transform: translateY(-50%) rotate(-15deg);
+    -webkit-transform: translateY(-50%) rotate(350deg);
+            transform: translateY(-50%) rotate(350deg);
     background-color: #EAE5DE;
     z-index: -1000;
   }
