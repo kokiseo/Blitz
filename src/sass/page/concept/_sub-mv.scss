@@ -1,0 +1,40 @@
+@use "global" as *; 
+
+.sub-mv{
+  padding: 0 rem(40);
+  margin-bottom: rem(40);
+
+  &__image {
+    height: auto;
+  }
+  
+  &__title {
+    text-align:right;
+    margin-top: rem(-26);
+    font-size: rem(48);
+    font-weight: $normal;
+  }
+}
+
+@include mq (md) {
+  .sub-mv {
+    padding: 0;
+    margin-bottom: rem(150);
+
+    &__image {
+      height: rem(600);
+
+      img{
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+      }
+    }
+
+    &__title {
+      text-align: left;
+      margin-top: rem(-80);
+      padding-left: rem(80);
+    }
+  }
+}

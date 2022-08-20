@@ -1,0 +1,108 @@
+@use "global" as *;
+
+.information {
+  &__inner {
+    max-width: $inner;
+    padding: 0 rem(16);
+    padding-top: rem(5);
+  }
+
+  &__title {
+    font-size: rem(21);
+    margin-bottom: rem(12);
+  }
+
+  &__text {
+    font-size: rem(12);
+    line-height: rem(22);
+
+    &-end {
+      margin-bottom: rem(30);
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .information__detail {
+      width: 50%;
+    }
+  }
+
+  &__detail {
+    margin-bottom: rem(20);
+
+    .information__text {
+      line-height: rem(18);
+    }
+  }
+
+  &__heading {
+    font-size: rem(13);
+    font-weight: $bold;
+    padding-left: rem(30);
+    margin-bottom: rem(4);
+    position: relative;
+
+    img {
+      width: rem(20);
+      height: rem(20);
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+  }
+
+  &__link {
+    padding-left: rem(30);
+    font-weight: $bold;
+    font-size: rem(13);
+    position: relative;
+    margin-bottom: rem(20);
+    display: block;
+
+    img {
+      width: rem(20);
+      height: rem(20);
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+  }
+}
+
+@include mq (md) {
+  .information {
+    &__link.u-mobile {
+      display: none;
+    }
+
+    &__inner {
+      margin: 0 auto;
+    }
+
+    &__title {
+      font-size: rem(24);
+    }
+
+    &__detail {
+      min-height: rem(100);
+    }
+
+    &__text {
+      font-size: $fontsize-pc;
+    }
+
+    &__heading {
+      font-size: rem(16);
+      padding-left: rem(40);
+
+      img {
+        width: rem(25);
+        height: rem(25);
+      }
+    }
+  }
+}

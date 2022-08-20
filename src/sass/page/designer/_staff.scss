@@ -1,0 +1,73 @@
+@use "global" as *;
+
+.staff {
+  &__inner {
+    max-width: $inner;
+    padding: 0 rem(16);
+    padding-top: rem(5);
+  }
+
+  &__item {
+    width: 100%;
+    height: rem(180);
+    margin-bottom: rem(50);
+
+    &.hamaguchi{
+      background-image: url(../images/designer/hamaguchi-sp.jpg);
+      background-position: top center;
+      background-size: cover;
+      transform: translateX(rem(-16));
+    }
+
+    &.toyoshima {
+      background-image: url(../images/designer/toyoshima-sp.jpg);
+      background-position: top center;
+      background-size: cover;
+      transform: translateX(rem(16));
+    }
+  }
+
+  &__category{
+    width: rem(120);
+    font-size: rem(13);
+    font-weight: 100;
+    color: white;
+    text-align: center;
+    background: #98784d;
+  }
+}
+
+@include mq (md) {
+  .staff {
+    &__inner {
+      margin: rem(100) auto;
+    }
+
+    &__item {
+      width: rem(800);
+      height: rem(375);
+      margin: 0 auto rem(50);
+
+      &.hamaguchi{
+        background-image: url(../images/designer/hamaguchi-sp.jpg);
+        background-position: top center;
+        background-size: cover;
+        transform: translateX(0);
+      }
+  
+      &.toyoshima {
+        background-image: url(../images/designer/toyoshima-sp.jpg);
+        background-position: top center;
+        background-size: cover;
+        transform: translateX(0);
+      }
+    }
+
+    &__category {
+      width: rem(250);
+      font-size: rem(26);
+      height: rem(50);
+      line-height: rem(50);
+    }
+  }
+}

@@ -1,0 +1,28 @@
+@use "global" as *; 
+
+.banner-reccomend {
+  &__inner {
+    max-width: $inner;
+    padding: 0 rem(16);
+    padding-top: rem(5);
+  }
+
+  &__image {
+    max-width: rem(320);
+    max-height: rem(110);
+  }
+}
+
+@include mq (md) {
+  .banner-reccomend {
+    &__inner {
+      margin: 0 auto;
+    }
+    
+    &__image {
+      img {
+        height: auto;
+      }
+    }
+  }
+}

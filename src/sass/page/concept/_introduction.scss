@@ -1,0 +1,26 @@
+@use "global" as *; 
+
+.introduction {
+margin-bottom: rem(60);
+
+  &__inner {
+    max-width: $inner;
+    padding: 0 rem(16);
+  }
+
+  &__text {
+    font-size: rem(13);
+  }
+}
+
+@include mq (md) {
+  .introduction {
+    &__inner {
+      margin: 0 auto;
+    }
+
+    &__text {
+      font-size: $fontsize-pc;
+    }
+  }
+}

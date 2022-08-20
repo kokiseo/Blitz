@@ -1,0 +1,112 @@
+@use "global" as *; 
+
+.photo {
+  margin-bottom: rem(50);
+
+  &__inner {
+    max-width: $inner;
+    padding: 0 rem(16);
+    padding-top: rem(5);
+  }
+
+  &__title {
+    font-family: $en-font;
+    font-size: rem(21);
+    font-weight: $regular;
+
+    span {
+      position: relative;
+      padding-left: rem(30);
+
+      &::before {
+        content: "";
+        width: rem(10);
+        height: rem(1);
+        background: #444;
+        position: absolute;
+        top: 50%;
+        left: rem(10);
+        transform: translateY(-50%);
+      }
+
+      &::after {
+        content: "";
+        width: rem(10);
+        height: rem(1);
+        background: #444;
+        position: absolute;
+        top: 50%;
+        right: rem(-20);
+        transform: translateY(-50%);
+      }
+    }
+  }
+
+  &__contents {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: rem(60);
+  }
+
+  &__images {
+    width: calc(50% - rem(20) );
+    max-height: rem(180);
+    overflow: hidden;
+
+    &:nth-child(odd) {
+      margin-right: rem(20);
+      margin-top: rem(-30);
+    }
+
+    &:nth-child(even) {
+      margin-left: rem(20);
+      margin-top: rem(30);
+    }
+  }
+}
+
+@include mq (md) {
+  .photo {
+    &__inner {
+      margin: 0 auto;
+    }
+
+    &__title {
+      font-size: rem(32);
+    }
+
+    &__images {
+      width: calc(33.333% - rem(40));
+      max-height: rem(380);
+      height: auto;
+      margin-bottom: rem(20);
+
+      &:nth-child(odd) {
+        margin-right: 0;
+        margin-top: 0;
+      }
+  
+      &:nth-child(even) {
+        margin-left: 0;
+        margin-top: 0;
+      }
+
+      &:nth-of-type(3n) {
+        margin-left: rem(20);
+      }
+      &:nth-of-type(3n-2) {
+        margin-right: rem(20);
+      }
+
+      picture {
+        height: 100%;
+      }
+
+      img {
+        height: auto;
+        width: 100%;
+      }
+    }
+
+  }
+}

@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Bilitz</title>
+
+  <link rel="stylesheet" href="../dist/css/destyle.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/@mdi/font@4.x/css/materialdesignicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <link rel="stylesheet" href="https://use.typekit.net/iqv2dia.css">
+  <link href="https://fonts.googleapis.com/css2?family=Jomolhari&family=Josefin+Sans:wght@400;700&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+
+
+<body>
+
+  <header class="header">
+    <h1 class="header__logo">
+      <a href="/" class="header__link">
+        <picture>
+          <source media="(min-width: 768px)" srcset="images/common/icons/logo.svg" type="image/svg+xml" />
+          <source media="(max-width: 767px)" srcset="images/common/icons/logo.svg" type="image/svg+xml" />
+          <img src="images/common/icons/logo.png" alt="blitz" width="32" height="35" loading="lazy" />
+        </picture>
+      </a>
+    </h1>
+
+    <!-- ハンバーガーメニュー -->
+
+  </header>
+
+  <main>
+    <section class="sub-mv">
+      <figure class="sub-mv__image">
+        <picture>
+          <source media="(min-width: 767px)" srcset="images/designer/firstview-sp.webp,  2x" type="image/webp">
+          <source media="(min-width: 320px)" srcset="images/designer/firstview-sp.webp,  2x" type="image/webp">
+          <img src="images/designer/firsrview-sp.jpg" alt="fv" width="296" height="282" loading="lazy">
+        </picture>
+      </figure>
+
+      <h2 class="sub-mv__title">Designer</h2>
+    </section>
+
+    <section class="staff">
+      <div class="staff__inner">
+
+        <ul class="staff__list">
+          <li class="staff__item hamaguchi js-modal-open" data-target="modal01">
+            <h2 class="staff__category">BLITZ Owner</h2>
+            <!-- <h3 class="staff__info">
+              <span class="staff__info--top">Hamaguchi</span>
+              <span class="staff__info--bottom">Tsutomu</span>
+            </h3> -->
+          </li>
+
+          <li class="staff__item toyoshima js-modal-open" data-target="modal02">
+            <h2 class="staff__category">Stylist</h2>
+            <!-- <h3 class="staff__info">
+              <span class="staff__info--top">Toyoshima</span>
+              <span class="staff__info--bottom">Sayaka</span>
+            </h3> -->
+          </li>
+        </ul>
+      </div>
+
+      <!-- modal -->
+      <div id="modal01" class="modal js-modal">
+        <div class="modal__bg js-modal-close"></div>
+        <div class="modal__content">
+          <div class="modal__header">
+            <figure class="modal__avatar">
+              <picture>
+                <source media="(min-width: 767px)" srcset="images/designer/hamaguchi-sp.webp,  2x" type="image/svg+xml">
+                <source media="(min-width: 320px)" srcset="images/designer/hamaguchi-sp.webp,  2x" type="image/svg+xml">
+                <img src="images/designer/hamaguchi-sp.jpg" alt="" width="310px" height="167px" loading="lazy">
+              </picture>
+            </figure>
+          </div>
+
+          <div class="modal__body">
+            <h2 class="modal__title">Hamaguchi Tsutomu</h2>
+
+            <div class="modal__sub-title">
+              <h2 class="modal__name">濱口 孟</h2>
+              <div class="modal__sns">
+                <div class="modal__sns-wrapper">
+                  <p class="modal__sns-link">
+                    <a href="">
+                      <figure class="modal__icon">
+                        <picture>
+                          <source media="(min-width: 768px)" srcset="images/common/icons/instagram.svg,  2x"
+                            type="image/webp">
+                          <source media="(max-width: 767px)" srcset="images/common/icons/instagram.svg, 2x"
+                            type="image/webp">
+                          <img src="images/common/icons/instagram.png" alt="" width="20" height="20" loading="lazy">
+                        </picture>
+                      </figure>
+                    </a>
+                  </p>
+    
+                  <p class="modal__sns-link">
+                    <a href="">
+                      <figure class="modal__icon">
+                        <picture>
+                          <source media="(min-width: 768px)" srcset="images/common/icons/facebook.svg,  2x" type="image/webp">
+                          <source media="(max-width: 767px)" srcset="images/common/icons/facebook.svg, 2x" type="image/webp">
+                          <img src="images/common/icons/facebook.png" alt="" width="20" height="20" loading="lazy">
+                        </picture>
+                      </figure>
+                    </a>
+                  </p>  
+                </div>
+              </div>
+            </div>
+
+
+
+            <div class="modal__description">
+              <p class="modal__text">
+                ロンドン・ニューヨーク・東京でスタイリスト経験を経て、2021年9月に大阪府堺市北花田にてヘアサロンをOPEN。
+              </p>
+              <p class="modal__text">
+                10年以上のスタイリスト歴があり、今まで25,000名以上のお客様のヘアデザインをしてきました。
+              </p>
+            </div>
+          </div>
+
+          <div class="modal__foot">
+            <span class="modal__label">
+              Good Menu
+            </span>
+            <p class="modal__text">ショートカット</p>
+            <p class="modal__text">小顔ショートカット</p>
+          </div>
+
+          <div class="modalreserve">
+            <div class="modalreserve__inner">
+              <p class="modalreserve__btn">
+                <a href="#">
+                  <img src="images/common/icons/line-gray.svg" alt="">
+                  LINEで予約する
+                </a>
+              </p>
+              <p class="modalreserve__btn">
+                <a href="#">
+                  <img src="images/common/icons/hpb-gray.svg" alt="">
+                  外部予約サイトで予約する
+                </a>
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div id="modal02" class="modal js-modal">
+        <div class="modal__bg js-modal-close"></div>
+        <div class="modal__content">
+          <div class="modal__header">
+            <figure class="modal__avatar">
+              <picture>
+                <source media="(min-width: 767px)" srcset="images/designer/toyoshima-sp.webp,  2x" type="image/svg+xml">
+                <source media="(min-width: 320px)" srcset="images/designer/toyoshima-sp.webp,  2x" type="image/svg+xml">
+                <img src="images/designer/toyoshima-sp.jpg" alt="" width="310px" height="167px" loading="lazy">
+              </picture>
+            </figure>
+          </div>
+
+          <div class="modal__body">
+            <h2 class="modal__title">Toyoshima Sayaka</h2>
+            <div class="modal__sub-title">
+              <h2 class="modal__name">豊島　さやか</h2>
+              <div class="modal__sns">
+                <div class="modal__sns-wrapper">
+                  <p class="modal__sns-link">
+                    <a href="">
+                      <figure class="modal__icon">
+                        <picture>
+                          <source media="(min-width: 768px)" srcset="images/common/icons/instagram.svg,  2x"
+                            type="image/webp">
+                          <source media="(max-width: 767px)" srcset="images/common/icons/instagram.svg, 2x"
+                            type="image/webp">
+                          <img src="images/common/icons/instagram.png" alt="" width="20" height="20" loading="lazy">
+                        </picture>
+                      </figure>
+                    </a>
+                  </p>
+    
+                  <p class="modal__sns-link">
+                    <a href="">
+                      <figure class="modal__icon">
+                        <picture>
+                          <source media="(min-width: 768px)" srcset="images/common/icons/facebook.svg,  2x" type="image/webp">
+                          <source media="(max-width: 767px)" srcset="images/common/icons/facebook.svg, 2x" type="image/webp">
+                          <img src="images/common/icons/facebook.png" alt="" width="20" height="20" loading="lazy">
+                        </picture>
+                      </figure>
+                    </a>
+                  </p>  
+                </div>
+              </div>
+            </div>
+
+            <div class="modal__description">
+              <p class="modal__text">
+                ロンドン・ニューヨーク・東京でスタイリスト経験を経て、2021年9月に大阪府堺市北花田にてヘアサロンをOPEN。
+              </p>
+              <p class="modal__text">
+                10年以上のスタイリスト歴があり、今まで25,000名以上のお客様のヘアデザインをしてきました。
+              </p>
+            </div>
+          </div>
+
+          <div class="modal__foot">
+            <span class="modal__label">
+              Good Menu
+            </span>
+            <p class="modal__text">ショートカット</p>
+            <p class="modal__text">小顔ショートカット</p>
+          </div>
+
+          <div class="modalreserve">
+            <div class="modalreserve__inner">
+              <p class="modalreserve__btn">
+                <a href="#">
+                  <img src="images/common/icons/line-gray.svg" alt="">
+                  LINEで予約する
+                </a>
+              </p>
+              <p class="modalreserve__btn">
+                <a href="#">
+                  <img src="images/common/icons/hpb-gray.svg" alt="">
+                  外部予約サイトで予約する
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- modal -->
+      
+    </section>
+
+
+
+    <!-- <a href="#" class="insta-icon">
+      <picture>
+        <source media="(min-width: 767px)" srcset="images/common/icons/instagram.svg,  2x" type="image/webp">
+        <source media="(min-width: 320px)" srcset="images/common/icons/instagram.svg, 2x" type="image/webp">
+        <img src="images/common/icons/instagram.png" alt="" width="20" height="20" loading="lazy">
+      </picture>
+    </a>
+    <a href="#" class="fb-icon">
+      <picture>
+        <source media="(min-width: 767px)" srcset="images/common/icons/facebook.svg,  2x" type="image/webp">
+        <source media="(min-width: 320px)" srcset="images/common/icons/facebook.svg, 2x" type="image/webp">
+        <img src="images/common/icons/facebook.png" alt="" width="20" height="20" loading="lazy">
+      </picture>
+    </a>
+
+    <p>
+      ロンドン・ニューヨーク・東京でスタイリスト経験を経て、2021年9月に大阪府堺市北花田にてヘアサロンをOPEN。
+    </p>
+    <p>
+      10年以上のスタイリスト歴があり、今まで25,000名以上のお客様のヘアデザインをしてきました。
+    </p>
+    <h4>Good menu</h4>
+    <ul>
+      <li>ショートカット</li>
+      <li>小顔ショートカット</li>
+    </ul>
+    <a href="#" class="button">
+      <img src="images/common/icons/line.svg" alt="">
+      LINEで予約する
+    </a>
+    <a href="#" class="button">
+      <img src="images/common/icons/hpb.svg" alt="">
+      外部予約サイトで予約する
+    </a>
+    modal -->
+
+
+    <!-- <section class="access reserve">
+      <a href="#" class="button">
+        <img src="images/common/icons/line.svg" alt="">
+        LINEで予約する
+      </a>
+      <a href="#" class="button">
+        <img src="images/common/icons/hpb.svg" alt="">
+        外部予約サイトで予約する
+      </a>
+    </section> -->
+  </main>
+
+
+  <footer class="footer">
+    <div class="footer__inner">
+
+      <nav class="fnav">
+        <a href="#" class="fnav__logo">
+          <figure class="fnav__image">
+            <picture>
+              <source media="(min-width: 768px)" srcset="images/common/logo.svg,  2x" type="image/webp">
+              <source media="(max-width: 767px)" srcset="images/common/logo.svg, 2x" type="image/webp">
+              <img src="images/common/logo.png" alt="" width="340" height="364" loading="lazy">
+            </picture>
+          </figure>
+        </a>
+
+        <div class="fnav__description">
+          <h3 class="fnav__heading">OPENING TIME</h3>
+          <p class="fnav__text">
+            火曜〜日曜 10:00〜19:00
+          </p>
+          <p class="fnav__text">
+            ※月曜定休日
+          </p>
+        </div>
+
+        <div class="fnav__social">
+          <h3 class="fnav__heading">SNS</h3>
+
+          <div class="fnav__unit">
+            <a href="#" class="fnav__link">
+              <figure class="fnav__icon">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="images/common/icons/instagram.svg,  2x" type="image/webp">
+                  <source media="(max-width: 767px)" srcset="images/common/icons/instagram.svg, 2x" type="image/webp">
+                  <img src="images/common/icons/instagram.png" alt="" width="20" height="20" loading="lazy">
+                </picture>
+              </figure>
+            </a>
+
+            <a href="#" class="fnav__link">
+              <figure class="fnav__icon">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="images/common/icons/facebook.svg,  2x" type="image/webp">
+                  <source media="(max-width: 767px)" srcset="images/common/icons/facebook.svg, 2x" type="image/webp">
+                  <img src="images/common/icons/facebook.png" alt="" width="20" height="20" loading="lazy">
+                </picture>
+              </figure>
+            </a>
+          </div>
+
+        </div>
+      </nav>
+
+      <p class="fnav__copyright">
+        <small>Copyright &copy; BLITZ / ALL RIGHTS RESERVED.</small>
+      </p>
+
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="./js/modernizr-custom.min.js" defer></script>
+  <script src="./js/script.js" defer></script>
+</body>
+
+</html>
