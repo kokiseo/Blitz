@@ -60,7 +60,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
 
   // モーダルウィンドウを閉じる
   $('.js-modal-close').on('click', function(){
-    $('body').removeClass('fixed');
+    $('body').removeClass('fixed').css({ top: 0 });
     window.scrollTo( 0 , scrollPosition );
     $('.js-modal').fadeOut();
     return false;

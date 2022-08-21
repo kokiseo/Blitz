@@ -26,9 +26,37 @@
     padding: 20px;
   }
 
+  &__btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: rem(30);
+    height: rem(30);
+    padding: rem(5);
+
+    &::before, &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: rem(3); /* 棒の幅（太さ） */
+      height: rem(20); /* 棒の高さ */
+      background: #333;
+    }
+
+    &::before {
+      transform: translate(-50%,-50%) rotate(45deg);
+    }
+
+    &::after {
+      transform: translate(-50%,-50%) rotate(-45deg);
+    }
+  }
+
   &__header {
     width: 100%;
     height: auto;
+    margin-top: rem(20);
   }
 
   &__title {

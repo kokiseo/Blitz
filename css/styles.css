@@ -781,9 +781,41 @@ select::-ms-expand {
   background: white;
   padding: 20px;
 }
+.modal__btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30px;
+  width: 1.875rem;
+  height: 30px;
+  height: 1.875rem;
+  padding: 5px;
+  padding: 0.3125rem;
+}
+.modal__btn::before, .modal__btn::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 3px;
+  width: 0.1875rem; /* 棒の幅（太さ） */
+  height: 20px;
+  height: 1.25rem; /* 棒の高さ */
+  background: #333;
+}
+.modal__btn::before {
+  -webkit-transform: translate(-50%, -50%) rotate(45deg);
+          transform: translate(-50%, -50%) rotate(45deg);
+}
+.modal__btn::after {
+  -webkit-transform: translate(-50%, -50%) rotate(-45deg);
+          transform: translate(-50%, -50%) rotate(-45deg);
+}
 .modal__header {
   width: 100%;
   height: auto;
+  margin-top: 20px;
+  margin-top: 1.25rem;
 }
 .modal__title {
   font-family: "Josefin Sans";
