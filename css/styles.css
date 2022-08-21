@@ -748,12 +748,12 @@ select::-ms-expand {
     -o-object-fit: cover;
        object-fit: cover;
     height: 100%;
-    width: 100%;
+    width: auto;
+    margin: 0 auto;
   }
   .sub-mv__title {
-    text-align: left;
     margin-top: -5rem;
-    padding-left: 5rem;
+    padding-right: 20%;
   }
 }
 .modal {

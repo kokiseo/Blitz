@@ -27,14 +27,14 @@
       img{
         object-fit: cover;
         height: 100%;
-        width: 100%;
+        width: auto;
+        margin: 0 auto;
       }
     }
 
     &__title {
-      text-align: left;
       margin-top: rem(-80);
-      padding-left: rem(80);
+      padding-right: 20%;
     }
   }
 }
