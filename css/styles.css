@@ -327,6 +327,9 @@ select::-ms-expand {
     width: 1.5625rem;
     height: 1.5625rem;
   }
+  .information__link {
+    margin-top: 1.25rem;
+  }
 }
 .reserve {
   margin: 50px 0;
