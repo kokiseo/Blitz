@@ -990,15 +990,15 @@ body.fixed {
     background-image: url(../images/designer/hamaguchi-sp.jpg);
     background-position: top center;
     background-size: cover;
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
+    -webkit-transform: translateX(-2rem);
+            transform: translateX(-2rem);
   }
   .staff__item.toyoshima {
     background-image: url(../images/designer/toyoshima-sp.jpg);
     background-position: top center;
     background-size: cover;
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
+    -webkit-transform: translateX(2rem);
+            transform: translateX(2rem);
   }
   .staff__category {
     width: 15.625rem;
