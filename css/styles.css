@@ -1521,6 +1521,7 @@ body.fixed {
   .flow__image img {
     max-width: 18.75rem;
     height: auto;
+    margin: 0 auto;
   }
   .flow__icon {
     width: 3.75rem;
