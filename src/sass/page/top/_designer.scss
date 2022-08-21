@@ -16,7 +16,8 @@
   }
 
   &__heading {
-    padding-top: 50px;
+    padding-top: rem(50);
+    margin-bottom: rem(20);
   }
 
   &__title {

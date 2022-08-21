@@ -77,6 +77,11 @@
   &__before {
     width: calc(50% - rem(20));
     position: relative;
+
+    img {
+      max-width: rem(150);
+      margin: 0 auto;
+    }
   }
 
   &__heading-before {
@@ -96,6 +101,11 @@
   &__after {
     width: calc(50% - rem(20));
     position: relative;
+
+    img {
+      max-width: rem(150);
+      margin: 0 auto;
+    }
   }
 
   &__heading-after {

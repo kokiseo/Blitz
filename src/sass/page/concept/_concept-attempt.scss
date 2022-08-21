@@ -53,19 +53,23 @@
     height: rem(300);
     &__inner {
       margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
     }
 
     &__wrapper {
       width: 50%;
-      float: right;
+      margin-left: 0;
+      order: 1;
     }
 
     &__text {
       width: calc(50% - 20px);
-      float: left;
       font-size: $fontsize-pc;
       padding-right: rem(20);
       margin-top: rem(5);
+      order: 0;
     }
 
     &__image {

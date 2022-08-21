@@ -10,6 +10,33 @@
   &__image {
     max-width: rem(320);
     max-height: rem(110);
+    position: relative;
+
+    &::before {
+      content: "Reccomend Menu";
+      width: 100%;
+      text-align: center;
+      color: white;
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-family: $en-font;
+      font-size: rem(26);
+      letter-spacing: 0.08em;
+    }
+
+    ::after {
+      content: "4月のおすすめメニューを紹介";
+      color: white;
+      text-align: center;
+      width: 100%;
+      position: absolute;
+      top: 60%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: rem(14);
+    }
   }
 }
 
@@ -22,6 +49,14 @@
     &__image {
       img {
         height: auto;
+      }
+
+      &::before {
+        font-size: rem(48);
+      }
+
+      &::after {
+        font-size: rem(24);
       }
     }
   }

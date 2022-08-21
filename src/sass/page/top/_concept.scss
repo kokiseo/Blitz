@@ -65,7 +65,7 @@ margin-bottom: rem(80);
 
 @include mq (md) {
   .concept {
-    margin: rem(150) 0;
+    margin: rem(100) 0 rem(150);
 
     &__inner {
       margin: 0 auto;

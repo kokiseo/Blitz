@@ -33,8 +33,8 @@
     }
 
     &__icon {
-      width: 20px;
-      height: 20px;
+      width: rem(20);
+      height: rem(20);
     }
 
     &__description {
@@ -95,14 +95,14 @@
   
       &__link {
         display: inline-block;
-        width: rem(40);
-        height: rem(40);
-        margin: 0 rem(12);
+        width: rem(24);
+        height: rem(24);
+        margin: 0 rem(6);
       }
   
       &__icon {
-        width: rem(40);
-        height: rem(40);
+        width: rem(24);
+        height: rem(24);
 
         img {
           width: 100%;

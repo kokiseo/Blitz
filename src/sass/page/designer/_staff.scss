@@ -52,14 +52,14 @@
         background-image: url(../images/designer/hamaguchi-sp.jpg);
         background-position: top center;
         background-size: cover;
-        transform: translateX(0);
+        transform: translateX(rem(-32));
       }
   
       &.toyoshima {
         background-image: url(../images/designer/toyoshima-sp.jpg);
         background-position: top center;
         background-size: cover;
-        transform: translateX(0);
+        transform: translateX(rem(32));
       }
     }
 
