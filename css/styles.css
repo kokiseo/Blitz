@@ -687,6 +687,7 @@ select::-ms-expand {
   }
   .introduction__text {
     font-size: 16px;
+    text-align: center;
   }
 }
 .sub-mv {
