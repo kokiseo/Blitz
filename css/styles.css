@@ -986,6 +986,35 @@ body.fixed {
   max-width: 20rem;
   max-height: 110px;
   max-height: 6.875rem;
+  position: relative;
+}
+.banner-reccomend__image::before {
+  content: "Reccomend Menu";
+  width: 100%;
+  text-align: center;
+  color: white;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-family: "Josefin Sans";
+  font-size: 26px;
+  font-size: 1.625rem;
+  letter-spacing: 0.08em;
+}
+.banner-reccomend__image ::after {
+  content: "4月のおすすめメニューを紹介";
+  color: white;
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 14px;
+  font-size: 0.875rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -994,6 +1023,12 @@ body.fixed {
   }
   .banner-reccomend__image img {
     height: auto;
+  }
+  .banner-reccomend__image::before {
+    font-size: 3rem;
+  }
+  .banner-reccomend__image::after {
+    font-size: 1.5rem;
   }
 }
 .movie {
