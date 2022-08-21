@@ -1959,7 +1959,9 @@ body.fixed {
   margin-bottom: 0.625rem;
 }
 .blog .card__title {
-  font-weight: 400;
+  font-weight: 700;
+  font-size: 16px;
+  font-size: 1rem;
 }
 .blog .card__body {
   padding: 0 10px;
@@ -2032,7 +2034,7 @@ body.fixed {
     height: 100%;
   }
   .blog .card__title {
-    font-size: 1.25rem;
+    font-size: 1.125rem;
   }
   .blog .card__text {
     font-size: 1rem;

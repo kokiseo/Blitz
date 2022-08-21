@@ -57,7 +57,8 @@
     }
 
     &__title {
-      font-weight: $normal;
+      font-weight: $bold;
+      font-size: rem(16);
     }
 
     &__body {
@@ -132,7 +133,7 @@
       }
 
       &__title {
-        font-size: rem(20);
+        font-size: rem(18);
       }
 
       &__text {
