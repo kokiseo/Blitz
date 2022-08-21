@@ -1733,6 +1733,11 @@ body.fixed {
   width: calc(50% - 1.25rem);
   position: relative;
 }
+.reccomend-menu__before img {
+  max-width: 150px;
+  max-width: 9.375rem;
+  margin: 0 auto;
+}
 .reccomend-menu__heading-before {
   position: absolute;
   bottom: 10px;
@@ -1753,6 +1758,11 @@ body.fixed {
 .reccomend-menu__after {
   width: calc(50% - 1.25rem);
   position: relative;
+}
+.reccomend-menu__after img {
+  max-width: 150px;
+  max-width: 9.375rem;
+  margin: 0 auto;
 }
 .reccomend-menu__heading-after {
   position: absolute;
