@@ -1810,8 +1810,8 @@ body.fixed {
   margin-bottom: 1.875rem;
 }
 .access__head {
-  font-size: 14px;
-  font-size: 0.875rem;
+  font-size: 16px;
+  font-size: 1rem;
   font-weight: 700;
 }
 .access__item {
@@ -1869,7 +1869,7 @@ body.fixed {
     margin: 21.875rem auto 0;
   }
   .access__head {
-    font-size: 1.25rem;
+    font-size: 1.125rem;
   }
   .access__item {
     font-size: 16px;
