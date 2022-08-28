@@ -2063,6 +2063,7 @@ body.fixed {
   margin: 0 auto 50px;
   margin: 0 auto 3.125rem;
   text-align: center;
+  z-index: 1000;
 }
 .blog__btn a {
   padding: 10px 60px;
@@ -2070,6 +2071,7 @@ body.fixed {
   border-bottom: 1px solid #7b7b7b;
   border-bottom: 0.0625rem solid #7b7b7b;
   position: relative;
+  z-index: 1000;
 }
 .blog__btn a::after {
   content: "";
