@@ -72,8 +72,8 @@
   &__menu {
     width: 48px;
     height: rem(25);
-    position: absolute;
-    top: rem(20);
+    position: fixed;
+    top: rem(30);
     right: rem(20);
   }
 
