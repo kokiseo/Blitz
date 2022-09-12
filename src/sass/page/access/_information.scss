@@ -71,6 +71,17 @@
       left: 0;
     }
   }
+
+  &__map {
+    width: 100%;
+    height: rem(250);
+    margin-bottom: rem(20);
+
+    iframe {
+      width: 100%;
+      height: 100%;
+    }
+  }
 }
 
 @include mq (md) {
