@@ -1989,30 +1989,16 @@ body.fixed {
   width: 6.3125rem;
 }
 .blog .cards {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  gap: 24px;
+  gap: 1.5rem;
 }
 .blog .card {
-  width: 50%;
   margin-bottom: 30px;
   margin-bottom: 1.875rem;
-}
-.blog .card:nth-child(odd) {
-  padding-right: 10px;
-  padding-right: 0.625rem;
-}
-.blog .card:nth-child(even) {
-  padding-left: 10px;
-  padding-left: 0.625rem;
 }
 .blog .card a {
   width: 100%;
@@ -2093,8 +2079,8 @@ body.fixed {
   .blog__inner {
     margin: 0 auto;
   }
-  .blog .card {
-    width: 33.3333333333%;
+  .blog .cards {
+    grid-template-columns: 1fr 1fr 1fr;
   }
   .blog .card:nth-child(1) {
     padding-right: 0.625rem;
