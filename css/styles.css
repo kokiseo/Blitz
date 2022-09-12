@@ -2567,9 +2567,9 @@ body.fixed {
   width: 48px;
   height: 25px;
   height: 1.5625rem;
-  position: absolute;
-  top: 20px;
-  top: 1.25rem;
+  position: fixed;
+  top: 30px;
+  top: 1.875rem;
   right: 20px;
   right: 1.25rem;
 }
